@@ -1,36 +1,26 @@
-# Dillon Drobena — Personal Website
+# dillondrobena.github.io
 
-A single-page personal/portfolio site. Plain HTML, CSS, and a little vanilla JS — **no build step, no dependencies.**
+Source for my personal site, hosted on GitHub Pages at https://dillondrobena.github.io.
 
-## Structure
+Static HTML, CSS, and vanilla JavaScript. No build step.
+
+## Files
+
 ```
-personal-website/
-├── index.html        # all content/markup
-├── styles.css        # styling (dark theme, responsive)
-├── script.js         # mobile nav, scroll state, footer year
-└── assets/
-    ├── avatar.jpg                  # GitHub profile photo
-    └── Dillon_Drobena_Resume.pdf   # linked from the "Résumé" buttons
+index.html    Markup and content
+styles.css    Styles
+script.js     Mobile nav, scroll state, footer year
+assets/       Profile photo and résumé PDF
 ```
 
 ## Run locally
-Just open `index.html` in a browser. Or serve it (better for testing relative paths):
 
 ```bash
-# from this folder
 python -m http.server 8000
-# then visit http://localhost:8000
 ```
 
-## Deploy (pick one — all free)
-- **GitHub Pages:** push these files to your `dillondrobena.github.io` repo (or any repo + enable Pages). It's static, so it works as-is.
-- **Vercel / Netlify:** drag-and-drop the folder, or connect the repo. No framework preset needed — it's a static site.
+Then open http://localhost:8000.
 
-## Editing
-- Text/content lives in `index.html` (sections are clearly commented: HERO, ABOUT, SKILLS, EXPERIENCE, PROJECTS, EDUCATION, CONTACT).
-- Colors are CSS variables at the top of `styles.css` (`--accent`, `--bg`, etc.).
-- To update the photo, replace `assets/avatar.jpg`. To update the résumé, replace `assets/Dillon_Drobena_Resume.pdf`.
+## Deploy
 
-## Notes
-- The projects shown are described generically (no client names), matching your résumé.
-- Add a custom domain later via your host's settings if you want (e.g., `dillondrobena.com`).
+Pushing to `main` updates the live site via GitHub Pages.
